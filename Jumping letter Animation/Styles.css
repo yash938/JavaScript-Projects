@@ -1,0 +1,24 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+.jumping-text {
+  font-size: 3em;
+  color: #ffff00;
+  display: flex;
+  gap: 4px;
+}
+
+.jumping-text span {
+  display: inline-block;
+  transform: translateY(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.jumping-text span:hover {
+  transform: translateY(-20px);
+}
